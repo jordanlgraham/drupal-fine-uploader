@@ -46,6 +46,7 @@ Tutorial: http://blog.fineuploader.com/2013/08/16/fine-uploader-s3-upload-direct
 4. Create IAM group / user
 	a. Create group first
 	b. Create permissions policy
+
 			{
 			  "Version":"2012-10-17",
 			  "Statement":[{
@@ -54,6 +55,7 @@ Tutorial: http://blog.fineuploader.com/2013/08/16/fine-uploader-s3-upload-direct
 			     "Resource":"arn:aws:s3:::[your_bucket_name]/*"
 			   }]
 			}
+			
 	c. create user (select "users" in left sidebar menu)
 	d. show user security credentials; download credentials as we can't get secret key again for that user
 	e. add user to group
