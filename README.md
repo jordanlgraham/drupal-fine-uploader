@@ -22,11 +22,10 @@ Tutorial: http://blog.fineuploader.com/2013/08/16/fine-uploader-s3-upload-direct
 			]
 		}
 
-		For upload only, change Action statement to s3:putObject
-		To restrict to a certain user, change Principal tag:
-			e.g.:	"AWS":"arn:aws:iam::147272306770:user/username"
+	For upload only, change Action statement to s3:putObject
 
-
+	To restrict to a certain user, change Principal tag:
+		e.g.:	"AWS":"arn:aws:iam::147272306770:user/username"
 
 3. Edit CORS configuration
 
@@ -42,7 +41,6 @@ Tutorial: http://blog.fineuploader.com/2013/08/16/fine-uploader-s3-upload-direct
 		    </CORSRule>
 		</CORSConfiguration>
 
-
 	Can restrict access by changing the parameter for AllowedOrigin - I think this is domain specific
 
 4. Create IAM group / user
@@ -53,17 +51,17 @@ Tutorial: http://blog.fineuploader.com/2013/08/16/fine-uploader-s3-upload-direct
 			  "Statement":[{
 			     "Effect":"Allow",
 			     "Action":"s3:PutObject",
-			     "Resource":"arn:aws:s3:::trivids_streaming/*"
+			     "Resource":"arn:aws:s3:::[your_bucket_name]/*"
 			   }]
 			}
 	c. create user (select "users" in left sidebar menu)
 	d. show user security credentials; download credentials as we can't get secret key again for that user
 	e. add user to group
 	f. use oplicy generator - select
-	
+
 		AWS Service: Amazon S3
 		Actions: DeleteObject, GetObject and PutObject
-		Amazon Resource Name: arn:aws:s3:::trivids_streaming/*
+		Amazon Resource Name: arn:aws:s3:::[your_bucket_name]/*
 
 		click "add stement"
 		click "continue"
@@ -98,12 +96,12 @@ Run the following commands:
 	b. mv aws-sdk-for-php aws
 	c. mv aws (into the folder from #12 so that it's even with index.html)
 14. Customize index.html
-	a. endpoint: replace with your bucket (e.g. trivids_streaming.s3.amazonaws.com)
+	a. endpoint: replace with your bucket (e.g. [your_bucket_name].s3.amazonaws.com)
 	b. accessKey: replace with Access Key ID from credentials you downloaded in step 4-d
 	c. edit s3/sign.php
 		i.    Replace $serverPrivateKey with Secret Access Key downloaded in step 4-d
 		ii.   Replace $serverPublicKey with Access Key Id downloaded in step 4-d
-		iii.  Replace $expectedBucketName with bucket (e.g. trivids_streaming)
+		iii.  Replace $expectedBucketName with bucket (e.g. [your_bucket_name])
 		iv. 	Edit $expectedMaxSize if necessary
 15. Move stylesheet from _build folder so that it's even with index.html
 
