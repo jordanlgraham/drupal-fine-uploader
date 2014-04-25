@@ -34,7 +34,7 @@ Tutorial: http://blog.fineuploader.com/2013/08/16/fine-uploader-s3-upload-direct
 
 3. Edit CORS configuration
 
-		<?xml version="1.0" encoding="UTF-8"?>
+		<code><?xml version="1.0" encoding="UTF-8"?>
 		<CORSConfiguration xmlns="http://s3.amazonaws.com/doc/2006-03-01/">
 		    <CORSRule>
 		        <AllowedOrigin>*</AllowedOrigin>
@@ -44,7 +44,7 @@ Tutorial: http://blog.fineuploader.com/2013/08/16/fine-uploader-s3-upload-direct
 		        <ExposeHeader>ETag</ExposeHeader>
 		        <AllowedHeader>*</AllowedHeader>
 		    </CORSRule>
-		</CORSConfiguration>
+		</CORSConfiguration></code>
 
 
 	Can restrict access by changing the parameter for AllowedOrigin - I think this is domain specific
