@@ -55,10 +55,13 @@ Tutorial: http://blog.fineuploader.com/2013/08/16/fine-uploader-s3-upload-direct
 			     "Resource":"arn:aws:s3:::[your_bucket_name]/*"
 			   }]
 			}
-			
+
 	c. create user (select "users" in left sidebar menu)
+
 	d. show user security credentials; download credentials as we can't get secret key again for that user
+	
 	e. add user to group
+	
 	f. use oplicy generator - select
 
 		AWS Service: Amazon S3
@@ -70,7 +73,9 @@ Tutorial: http://blog.fineuploader.com/2013/08/16/fine-uploader-s3-upload-direct
 		click "apply policy"
 
 5. Clone fine uploader repo onto your machine
+
 		"git clone https://github.com/Widen/fine-uploader.git"
+
 6. Add node.js to your server if it's not already installed
 
 Install the dependencies:
