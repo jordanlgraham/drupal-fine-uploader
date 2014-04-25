@@ -102,11 +102,15 @@ Tutorial: http://blog.fineuploader.com/2013/08/16/fine-uploader-s3-upload-direct
 11. Compiled files are in fine-uploader/_build
 
 12. Move sample assets files into server 
+
 	@TODO: figure out what's in those files
 
 13. Get AWS-SDK
+
 	a. git clone https://github.com/amazonwebservices/aws-sdk-for-php.git
+	
 	b. mv aws-sdk-for-php aws
+	
 	c. mv aws (into the folder from #12 so that it's even with index.html)
 
 14. Customize index.html
