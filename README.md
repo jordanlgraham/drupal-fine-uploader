@@ -91,25 +91,41 @@ Run the following commands:
 	make
 	sudo make install
 
+
 7. Navigate into the fine-uploader directory
+
 8. npm install
+
 9. Install grunt: sudo npm install -g grunt-cli
+
 10. grunt build
+
 11. Compiled files are in fine-uploader/_build
+
 12. Move sample assets files into server 
 	@TODO: figure out what's in those files
+
 13. Get AWS-SDK
 	a. git clone https://github.com/amazonwebservices/aws-sdk-for-php.git
 	b. mv aws-sdk-for-php aws
 	c. mv aws (into the folder from #12 so that it's even with index.html)
+
 14. Customize index.html
+
 	a. endpoint: replace with your bucket (e.g. [your_bucket_name].s3.amazonaws.com)
+
 	b. accessKey: replace with Access Key ID from credentials you downloaded in step 4-d
+
 	c. edit s3/sign.php
+
 		i.    Replace $serverPrivateKey with Secret Access Key downloaded in step 4-d
+
 		ii.   Replace $serverPublicKey with Access Key Id downloaded in step 4-d
+
 		iii.  Replace $expectedBucketName with bucket (e.g. [your_bucket_name])
+
 		iv. 	Edit $expectedMaxSize if necessary
+
 15. Move stylesheet from _build folder so that it's even with index.html
 
 
