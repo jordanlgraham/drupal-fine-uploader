@@ -80,16 +80,16 @@ Tutorial: http://blog.fineuploader.com/2013/08/16/fine-uploader-s3-upload-direct
 
 	Install the dependencies:
 
-		sudo apt-get install g++ curl libssl-dev apache2-utils
-		sudo apt-get install git-core (unless you already have it)
+		$ sudo apt-get install g++ curl libssl-dev apache2-utils
+		$ sudo apt-get install git-core (unless you already have it)
 
 	Run the following commands:
 
-		git clone git://github.com/ry/node.git
-		cd node
-		./configure
-		make
-		sudo make install
+		$ git clone git://github.com/ry/node.git
+		$ cd node
+		$ ./configure
+		$ make
+		$ sudo make install
 
 7. Navigate into the fine-uploader directory
 
