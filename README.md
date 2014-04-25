@@ -62,7 +62,7 @@ Tutorial: http://blog.fineuploader.com/2013/08/16/fine-uploader-s3-upload-direct
 	
 	e. add user to group
 	
-	f. use oplicy generator - select
+	f. use policy generator - select
 
 		AWS Service: Amazon S3
 		Actions: DeleteObject, GetObject and PutObject
