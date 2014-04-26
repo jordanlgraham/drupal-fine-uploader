@@ -101,9 +101,7 @@ Tutorial: http://blog.fineuploader.com/2013/08/16/fine-uploader-s3-upload-direct
 
 11. Compiled files are in fine-uploader/_build
 
-12. Move sample assets files into server 
-
-	@TODO: figure out what's in those files
+12. Move the contents of this repo onto your server 
 
 13. Get AWS-SDK
 
